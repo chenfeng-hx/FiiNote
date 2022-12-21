@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <title>this is my page.</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="box">
+            <div class="inner">
+                <p>
+                    <h3>注意事项：</h3>
+                    1、在输入框中输入一串字符串<br />
+                    2、点击按钮translation_forward将其转换为凯撒密码的明文<br />
+                    3、点击按钮translation_back将其转换为凯撒密码的密文<br />
+                </p>    
+            </div>
+            <form action="">
+                <table>
+                    <tr>
+                        <td><label for="user_input">请输入:</label></td>
+                        <td><input type="text" name="user_input" id="user_input"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="translation">转换后的明文:&nbsp;&nbsp;</label></td>
+                        <td><input type="text" name="translation" id="translation"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="translation">转换后的密文:&nbsp;&nbsp;</label></td>
+                        <td><input type="text" name="translation" id="translation"></td>
+                    </tr>
+                </table>
+                <div class="buts">
+                    <!-- 此处要注意必须将按钮的type值修改为button，否则默认为submit，会提交，这样点击按钮后页面会刷新 -->
+                    <!-- 所以结果出现的时间很短暂，无法满足效果 -->
+                    <button type="button">translation_forward</button>    
+                    <button type="button">translation_back</button>
+                    <button type="reset">reset</button>       
+                </div>
+            </form>    
+        </div>
+        <!-- <script src="./还原凯撒密码.js"></script> -->
+        <script src="./构造对象版.js"></script>
+    </body>
+</html>
